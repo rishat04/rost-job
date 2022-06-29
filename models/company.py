@@ -31,4 +31,4 @@ class Company:
 
     def show(self):
         self.cursor.execute('SELECT * From company')
-        print(self.cursor.fetchall())
+        #print(self.cursor.fetchall())
