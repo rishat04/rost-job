@@ -12,7 +12,7 @@ def start_company_admin(msg):
     text = read_rules('company')
 
     try:
-        bot.send_photo(msg.chat.id, photo=open('res\company.jpg', 'rb'))
+        bot.send_photo(msg.chat.id, photo=open('res/company.jpg', 'rb'))
     except:
         print('Can\'t find the photo :(')
 
