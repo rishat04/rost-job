@@ -38,4 +38,4 @@ class Departament:
 
     def show(self):
         self.cursor.execute('SELECT * From Departament')
-        print(self.cursor.fetchall())
+        #print(self.cursor.fetchall())
