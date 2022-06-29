@@ -73,6 +73,6 @@ class Application:
 
     def show(self):
         self.cursor.execute('SELECT * FROM Application')
-        print(self.cursor.fetchall())
+        #print(self.cursor.fetchall())
 
     
