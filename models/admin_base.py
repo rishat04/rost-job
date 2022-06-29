@@ -42,4 +42,4 @@ class AdminBase:
 
     def show(self):
         self.cursor.execute(f'SELECT * From {self.table_name}')
-        print(self.cursor.fetchall())
+        #print(self.cursor.fetchall())
