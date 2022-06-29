@@ -10,7 +10,7 @@ def start_departament(msg):
         bot.send_message(user_id, 'Сорри но вы не админ!')
         return
     text = read_rules('departament')
-    bot.send_photo(msg.chat.id, photo=open('', 'rb'))
+    bot.send_photo(msg.chat.id, photo=open('res/departament.jpg', 'rb'))
     bot.send_message(msg.chat.id, text=text, reply_markup=admin_dep_markup)
 
 @bot.message_handler(text=['Меню администратора'])
@@ -21,7 +21,7 @@ def start_departament(msg):
         return
     text = read_rules('departament')
     try:
-        bot.send_photo(msg.chat.id, photo=open('res\departament.jpg', 'rb'))
+        bot.send_photo(msg.chat.id, photo=open('res/departament.jpg', 'rb'))
     except:
         print('Can\'t find the photo :(')
     bot.send_message(msg.chat.id, text=text, reply_markup=admin_dep_markup)
