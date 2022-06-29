@@ -8,7 +8,7 @@ bot = telebot.TeleBot(token=token)
 bot.add_custom_filter(custom_filters.TextMatchFilter())
 
 def read_rules(path):
-    with open(f'res\{path}.txt', encoding='utf-8') as f:
+    with open(f'res/{path}.txt', encoding='utf-8') as f:
         return f.read()
 
 rules = read_rules('users')
