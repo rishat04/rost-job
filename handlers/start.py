@@ -18,7 +18,7 @@ def start_bot(msg):
 
 
     try:
-        bot.send_photo(msg.chat.id, photo=open('res\\users.jpg', 'rb'))
+        bot.send_photo(msg.chat.id, photo=open('res/users.jpg', 'rb'))
     except:
         raise Exception('Can\'t find the photo :(')
 
