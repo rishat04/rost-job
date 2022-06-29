@@ -36,4 +36,4 @@ class User:
 
     def show(self):
         self.cursor.execute('SELECT * FROM User')
-        print(self.cursor.fetchall())
+        #print(self.cursor.fetchall())
